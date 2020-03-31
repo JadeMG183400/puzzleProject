@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="425.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.customController">
+   <children>
+      <ImageView fitHeight="425.0" fitWidth="750.0">
+         <image>
+            <Image url="@puzzle-background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" text="𝕮𝖚𝖘𝖙𝖔𝖒𝖎𝖟𝖊 𝖞𝖔𝖚𝖗 𝖕𝖚𝖟𝖟𝖑𝖊" textFill="#ffffffbf">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="-1.0" text="𝕮𝖚𝖘𝖙𝖔𝖒𝖎𝖟𝖊 𝖞𝖔𝖚𝖗 𝖕𝖚𝖟𝖟𝖑𝖊">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="117.0" layoutY="120.0" text="𝕾𝖎𝖟𝖊" textFill="#ffffffbf">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="120.0" text="𝕾𝖎𝖟𝖊">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="558.0" layoutY="120.0" text="𝕾𝖍𝖆𝖕𝖊" textFill="#ffffffbf">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="554.0" layoutY="119.0" text="𝕾𝖍𝖆𝖕𝖊">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ComboBox fx:id="cmb_size" layoutX="71.0" layoutY="177.0" prefWidth="150.0" style="-fx-background-color: #B0E0E6;" />
+      <ComboBox fx:id="cmb_shape" layoutX="526.0" layoutY="177.0" onAction="#setSizes" prefWidth="150.0" style="-fx-background-color: #B0E0E6;" />
+      <Button fx:id="btn_start" layoutX="325.0" layoutY="336.0" mnemonicParsing="false" onAction="#btnStart" style="-fx-background-color: #B0E0E6; -fx-background-radius: 30px;" text="Start!">
+         <font>
+            <Font name="Ink Free" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#00c2b0" offset="0.007662835249042145" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="312.0" layoutY="120.0" text="𝕼𝖚𝖆𝖓𝖙𝖎𝖙𝖞" textFill="#ffffffbf">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="119.0" text="𝕼𝖚𝖆𝖓𝖙𝖎𝖙𝖞">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ComboBox fx:id="cmb_quantity" layoutX="300.0" layoutY="177.0" prefWidth="150.0" style="-fx-background-color: #B0E0E6;" />
+   </children>
+</AnchorPane>

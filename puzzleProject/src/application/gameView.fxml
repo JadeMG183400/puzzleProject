@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="500.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.gameController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="850.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_restart" layoutX="696.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnRestart" prefHeight="47.0" prefWidth="119.0" style="-fx-background-radius: 30px; -fx-background-color: #B0E0E6;" text="Restart">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btn_autoSolution" layoutX="696.0" layoutY="95.0" mnemonicParsing="false" onAction="#btnAutomatic" prefHeight="47.0" prefWidth="119.0" style="-fx-background-radius: 30px; -fx-background-color: #B0E0E6;" text="Automatic solution" textAlignment="CENTER">
+         <font>
+            <Font name="Ink Free" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00c2b0" />
+                  <Stop color="#39009a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>
